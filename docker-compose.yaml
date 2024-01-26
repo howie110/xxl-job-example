@@ -31,7 +31,7 @@ services:
       - "13306:3306"
     volumes:
       #      #mysql数据库挂载到host物理机目录/e/docker/mysql/data/db
-      #      - "./data:/var/lib/mysql"
+      - "./data/mysqldata:/var/lib/mysql"
       #      #容器的配置目录挂载到host物理机目录/e/docker/mysql/data/conf
       #      - "./conf:/etc/mysql/conf.d"
       #      - "./root:/root"
