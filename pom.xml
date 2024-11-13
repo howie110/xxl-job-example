@@ -64,6 +64,12 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--加上这个是为了防止出现maven打包错误-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version><!--亲测：3.1.0和2.4.3都可以。-->
+			</plugin>
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
