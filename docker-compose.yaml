@@ -12,6 +12,6 @@ services:
       - ./data/logs:/data/applogs
       - ./data/xxl-job/:/xxl-job
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://8.138.123.59:3306/xxl_job?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
-      - SPRING_DATASOURCE_USERNAME=aowugong
-      - SPRING_DATASOURCE_PASSWORD=XATLmZhhTt5eNKeZ
+      - SPRING_DATASOURCE_URL=jdbc:mysql://<服务器IP地址>:3306/xxl_job?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123456
